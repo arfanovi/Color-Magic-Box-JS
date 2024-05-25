@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Switch-CASE ColorChange </title>
+</head>
+<body>
+
+
+    <section class=" ">
+        <div class="flex items-center justify-center h-screen bg-gray-800">
+
+            <div class="text-center">
+                <h1 class="text-3xl text-yellow-300 font-bold mb-4">Your Fav Color </h1>
+
+                <select id="colorSelect" class="p-2 border border-gray-400 rounded">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="white">White</option>
+                    <option value="pink">Pink</option>
+                    <!-- #232b2b -->
+                    <option 
+                    value="purple">Purple</option>
+                    <!-- #b9e2f5 -->
+                    <option 
+                    value="skyblue">Skyblue</option>
+                 
+                </select>
+                    <button onclick="changeColor()" class="text-white rounded hover:bg-blue-600 p-6">
+                        Check New Color
+                    </button>
+                <div  class="border border-green-400 mt-4 w-48 h-48 " id="colorBoc">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Link added javascript -->
+    <script src="switch-cse.js"></script>
+</body>
+</html>
