@@ -3,15 +3,22 @@
 function changeColor () {
     const colorSelect  = document.getElementById('colorSelect');
     const colorBox = document.getElementById('colorBoc');
+    const colorNameDiv = document.getElementById('colorName');
     const selectorColor = colorSelect.value;
+ 
+    let colorName;
+    let textColor;
 
 
 switch (selectorColor) {
     case 'Red' :
     colorBox.style.backgroundColor = '#FF0000';
+    colorNameDiv = 'Red'
+    textColor = '#FF0000';
     break;
     case 'Green' :
     colorBox.style.backgroundColor = '#00FF00';
+
     break;
     case 'Blue' :
     colorBox.style.backgroundColor = '#0000FF';
@@ -101,6 +108,13 @@ switch (selectorColor) {
     colorBox.style.backgroundColor = '#FF66CC';
     break;
 
+    default:
+        colorBox.style.backgroundColor = 'white';
+        colorName = '';
+        textColor = 'black';
 
-
-}}
+}
+  
+            colorNameDiv.innerHTML = colorName;
+            colorNameDiv.style.color = textColor;
+}
